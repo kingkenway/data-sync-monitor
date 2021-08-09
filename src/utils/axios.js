@@ -5,7 +5,8 @@ import store from '@/store'
 const token = localStorage.getItem('token') || ''
 // axios.defaults.baseURL = 'http://127.0.0.1:8000/' // the prefix of the URL
 // axios.defaults.baseURL = "http://127.0.0.1:3000/v1" // the prefix of the URL
-axios.defaults.baseURL = process.env.VUE_APP_ENV_URL // the prefix of the URL
+// axios.defaults.baseURL = process.env.VUE_APP_ENV_URL // the prefix of the URL
+axios.defaults.baseURL = "https://datasyncmonitorapis.herokuapp.com/v1" // the prefix of the URL
 axios.defaults.headers.get['Accept'] = 'application/json'   // default header for all get request
 axios.defaults.headers.post['Accept'] = 'application/json'  // default header for all POST request
 axios.defaults.headers.post['Content-Type'] = 'application/json'
