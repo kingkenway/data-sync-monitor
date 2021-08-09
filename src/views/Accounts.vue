@@ -7,6 +7,7 @@
                 No account linked yet.
                 <hr class="hr">
                 <img @click="launchMono({reauthorise: false, reauthToken:''})" class="mono-button" src="@/assets/connect_button.png" alt="">
+                <LoaderMin v-if="mainLoader" />
                 <!-- <button class="w3-button w3-black w3-hover-black" @click="launchMono">
                     + Add Account
                 </button> -->
