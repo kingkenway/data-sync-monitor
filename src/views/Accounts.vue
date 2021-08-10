@@ -203,6 +203,7 @@ export default {
                     console.log(res.data);
                     if (res.data.message == "SYNC_SUCCESSFUL") {
                         this.$toast.success('Account synced successfully.', 'Message:', this.notificationSystem.options.success)
+                        this.reloadPage();
                     }else if(res.data.message == "REAUTHORISATION_REQUIRED"){
                         // Update account state of reauth to True
                         this.update_account_reauth_status(accountId)
